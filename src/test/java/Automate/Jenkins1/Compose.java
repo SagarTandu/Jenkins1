@@ -22,7 +22,7 @@ public class Compose {
 
 	@Test 
 	public void browser() {
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Automate/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/JenkinsDemo/drivers/chromedriver");
 		ChromeOptions ch = new ChromeOptions();
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\sagar.tandu\\Downloads\\chromedriver_win32\\chromedriver.exe");
 	    ch.addArguments("--headless", "--disable-gpu", "--window-size=1920,1080","--no-sandbox");		
