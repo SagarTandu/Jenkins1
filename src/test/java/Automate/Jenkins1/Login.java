@@ -73,7 +73,11 @@ public void invalidphone() {
 	String text = driver.findElement(By.xpath("//*[text()='Enter a valid email or phone number']")).getText();
 	System.out.println(text);
 	Assert.assertEquals("Enter a valid email or phone number", text);
-	
     }
+
+@Test
+public void CaseNotCreated() {
+	System.out.println("test case not created in Zephyr");
+}
 	
 }
