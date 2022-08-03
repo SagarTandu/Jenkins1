@@ -56,7 +56,7 @@ public void invalidemail() throws InterruptedException {
 	driver.findElement(By.name("identifier")).sendKeys("sagar.tndu@gmail");
 	act.sendKeys(Keys.ENTER).build().perform();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-	String text = driver.findElement(By.xpath("//*[text()='Enter a valid email or phone number']")).getText();
+	String text = driver.findElement(By.xpath("//*[tex()='Enter a valid email or phone number']")).getText();
 	System.out.println(text);
 	Assert.assertEquals("Enter a valid email or phone number", text);
 	
